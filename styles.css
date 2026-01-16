@@ -1,0 +1,94 @@
+/* Styles principaux pour Le Fournil de Lhoussaine */
+:root{
+  --accent:#b35423;
+  --dark:#2b2b2b;
+  --muted:#666;
+  --bg:#faf6f0;
+  --card-bg:#fff;
+  --radius:10px;
+  --container-width:1100px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.5;
+}
+
+.container{
+  max-width:var(--container-width);
+  margin:0 auto;
+  padding:1.25rem;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(90deg, rgba(179,84,35,0.95), rgba(196,110,60,0.95));
+  color:#fff;
+  padding:1.25rem 0;
+}
+.header-inner h1{margin:0;font-size:1.6rem}
+.tagline{margin:0.25rem 0 0;font-weight:300}
+
+/* Hero */
+.hero{
+  background: url('https://images.unsplash.com/photo-1521302200278-2040d8f298b6?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+  color:#fff;
+  padding:3.5rem 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.hero-inner h2{margin:0 0 0.5rem;font-size:2rem}
+.hero-inner p{max-width:60ch; margin:0}
+
+/* Sections */
+.story, .products, .order{
+  background:transparent;
+  padding:2rem 0;
+}
+
+/* Grid of products */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+.card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
+.card-body{padding:0.9rem}
+.card-body h3{margin:0 0 0.5rem}
+.card-body p{margin:0;color:var(--muted)}
+
+/* Order section */
+.order p{margin:.5rem 0}
+
+/* Footer */
+.site-footer{
+  background:#fff;
+  border-top:1px solid #eee;
+  padding:1rem 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* Responsive small tweaks */
+@media (max-width:600px){
+  .hero-inner h2{font-size:1.4rem}
+  .hero{padding:2rem 0}
+}

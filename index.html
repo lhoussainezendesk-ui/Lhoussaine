@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Le Fournil de Lhoussaine — Boulangerie</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Le Fournil de Lhoussaine — pains artisanaux, levain naturel et recettes familiales." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Le Fournil de Lhoussaine</h1>
+      <p class="tagline">Pain artisanal • Levain naturel • Saveurs de la tradition</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2>Bienvenue au Fournil</h2>
+        <p>Nous faisons du pain comme autrefois, avec du temps, du savoir-faire et des ingrédients simples.</p>
+      </div>
+    </section>
+
+    <section class="story container" id="histoire">
+      <h2>Notre histoire</h2>
+      <p>
+        Le Fournil de Lhoussaine est une boulangerie familiale fondée sur la passion du pain bien fait.
+        Inspiré par les recettes de grand-mère et l'amour des ingrédients locaux, chaque fournée est le
+        résultat d'un long travail de levain, de pétrissage manuel et de cuisson au feu de chaleur douce.
+      </p>
+      <p>
+        Nous privilégions les farines locales, le levain naturel et les méthodes lentes pour obtenir des pains
+        à la saveur complexe et à la croûte croustillante.
+      </p>
+    </section>
+
+    <section class="products container" id="pains">
+      <h2>Les pains que nous fabriquons</h2>
+
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=60" alt="Baguette tradition">
+          <div class="card-body">
+            <h3>Baguette Tradition</h3>
+            <p>La baguette classique, croûte dorée et croustillante, mie légère et alvéolée. Farine de blé locale, pétrissage lent.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=60" alt="Pain de campagne">
+          <div class="card-body">
+            <h3>Pain de Campagne</h3>
+            <p>Mélange de farines (blé et seigle) pour un goût rustique, mie moelleuse et croûte généreuse — parfait avec du fromage.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=60" alt="Pain au levain">
+          <div class="card-body">
+            <h3>Pain au Levain</h3>
+            <p>Levain naturel, fermentation lente pour une palette aromatique profonde et une mie savoureuse. Croûte caramélisée.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1541599540903-216a46caad24?auto=format&fit=crop&w=800&q=60" alt="Fougasse romarin">
+          <div class="card-body">
+            <h3>Fougasse (romarin & olive)</h3>
+            <p>Pain plat provençal, parfumé au romarin et aux olives. Idéal pour l'apéritif ou accompagner un plat méditerranéen.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1505577058444-a3dab90f5f8f?auto=format&fit=crop&w=800&q=60" alt="Pain aux noix">
+          <div class="card-body">
+            <h3>Pain aux Noix</h3>
+            <p>M��lange légèrement sucré, enrichi de noix grillées. Texture fondante, parfait pour accompagner fromages et confitures.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1593209867473-6b2b2d5a7f53?auto=format&fit=crop&w=800&q=60" alt="Brioche maison">
+          <div class="card-body">
+            <h3>Brioche Maison</h3>
+            <p>Brioches au beurre, mie filante et dorée, légèrement sucrée — un bonheur au petit-déjeuner.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=60" alt="Croissant au beurre">
+          <div class="card-body">
+            <h3>Croissant au Beurre</h3>
+            <p>Viennoiserie feuilletée au beurre pur — croustillante à l'extérieur, fondante à l'intérieur.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="order container" id="commander">
+      <h2>Commander & Nous trouver</h2>
+      <p>Pour commander : <strong>Tel :</strong> 06 12 34 56 78 — <strong>Email :</strong> contact@lefournil.example</p>
+      <p>Horaires : Du mardi au dimanche, 6h30 — 13h30. Fermé le lundi.</p>
+      <p>Adresse : 12 rue du Marché, 75000 Paris (exemple).</p>
+      <p class="note">Pour personnaliser vos pains (noix, graines, olives), appelez-nous la veille.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Le Fournil de Lhoussaine — Pain & tradition</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mettre l'année courante dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
